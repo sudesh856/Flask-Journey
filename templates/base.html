@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body> 
+
+    <p>
+        this will always be here
+    </p>
+    <h1>My Website</h1>
+
+    {% block content %}
+    <p>This is the default content.</p>
+    {% endblock %}
+</body>
+</html>
+one
