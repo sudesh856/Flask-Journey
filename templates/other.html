@@ -4,6 +4,24 @@
 
 {% block content %} 
 
-    <h1>Hey this is other</h1>
+    <h1>Filters </h1>
+    <p>
+        {{ some_text|upper }}
+        {{ some_text|title }}
+        {{ some_text|replace('i', "X") }}
+        
+    </p>
+
+    <p>
+       {{ some_text|reverse_string }} 
+    </p>
+
+    <p>
+        {{ some_text|repeat }}
+    </p>
+
+    <p>
+         {{ some_text|alternate_case }}
+    </p>
 {% endblock %}
         
