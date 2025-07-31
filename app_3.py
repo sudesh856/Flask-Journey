@@ -11,8 +11,21 @@ def index():
         return render_template('index.html')
     
     elif request.method == "POST":
-        return ""
+        username = request.form.get('username')
+        password = request.form.get('password')
+
+        if username == "sudesh" and password == "sudesh":
+            return "Success"
+        
+        else:
+            return "Failure"
+        
+
+@app.route('/file_upload', methods = ['GET' , 'POST'])
+
+def file_upload():
+    return ""
 
 
 if __name__ == '__main__':
-    app.rub(debug=True)
+    app.run(debug=True)
