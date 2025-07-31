@@ -38,3 +38,9 @@ git diff                # See line-by-line changes before committing
 🔁 Optional (To Reset Push Forcefully)
 Only use if needed (be careful):
 git push -f origin main
+
+
+
+git add templates/index.html
+git commit -m "Updated index.html with new changes"
+git push

@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App</title>
-</head>
-<body>
+<!-- {% extends "base.html"%}
+
+{% block title %} Index Page {% endblock %}
+
+{% block content %} 
+
     <h1>Hello World</h1>
 <ul>
     
         {%for item in mylist %}
-            {% if item == 30 %}
+          
 
-                <li style="color: red;">{{ item }}
-            {%else %}
-             
-       
-                <li>
-                    {{ item }} </li>
-            {% endif %}
+                <li {% if item == 30 %} style="color: red;"{% endif %}> {{ item }}</li>
+          
 
         {% endfor %}
             
@@ -26,7 +19,5 @@
         
     
 </ul>
-    
-        
-</body>
-</html>
+{% endblock %}
+         -->
