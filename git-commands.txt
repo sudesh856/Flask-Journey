@@ -1,0 +1,40 @@
+📁 .git-commands.txt  
+For Flask-Journey 🚀  
+By Sudesh Subedi – BSc CSIT | Backend Dev in Progress
+
+🧱 0. One-time setup (First time only)
+Run once when you first clone or start the project:
+git init                # Only if starting from scratch
+git remote add origin https://github.com/sudesh856/Flask-Journey.git
+
+🧑‍💻 1. Before You Code (ALWAYS)
+git pull                # Get latest changes from GitHub before working
+
+💾 2. After You Finish a Task or Learn Something New
+git status              # See what files changed
+git add .               # Stage all changes
+git commit -m "Day X: What you did/learned"
+
+☁️ 3. Push to GitHub (FIRST TIME after commit)
+git push --set-upstream origin main
+
+☁️ After that, just:
+git push
+
+🧠 4. To View Your Progress History
+git log --oneline       # See previous commits
+
+🧼 5. If You Mess Up and Want to Undo Uncommitted Changes
+git restore .           # Reverts all files to last commit
+
+🧪 6. To Check What You Changed
+git diff                # See line-by-line changes before committing
+
+✅ Git Commit Message Examples:
+- Day 1: Created hello world Flask app
+- Day 2: Learned route handling and URL params
+- Day 3: Added basic HTML using templates
+
+🔁 Optional (To Reset Push Forcefully)
+Only use if needed (be careful):
+git push -f origin main
