@@ -8,11 +8,23 @@
 <body>
     <h1>Hello World</h1>
 <ul>
-    <li>
+    
         {%for item in mylist %}
-            hello
+            {% if item == 30 %}
+
+                <li style="color: red;">{{ item }}
+            {%else %}
+             
+       
+                <li>
+                    {{ item }} </li>
+            {% endif %}
+
         {% endfor %}
-    </li>
+            
+           
+        
+    
 </ul>
     
         
