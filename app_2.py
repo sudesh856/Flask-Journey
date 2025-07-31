@@ -37,12 +37,30 @@ def redirect_endpoint():
     return redirect(url_for('other'))
 
 
+
+@app.route('/my_redirection')
+
+def my_redirection():
+    return redirect(url_for('other'))
+
+
 @app.template_filter('alternate_case')
 
 def alternate_case(s):
     return ''.join([c.upper() if i % 2 == 0 else c.lower() for i,c in enumerate(s)])
 
+
+
+
+@app.template_filter('joe_mama')
+
+
+def joe_mama(param):
+    return "sudesh here"
+
+
 if __name__ == "__main__":
     app.run(debug=True)
+
 
  
