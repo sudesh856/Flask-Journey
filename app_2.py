@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__, template_folder='templates')
 
@@ -28,6 +28,14 @@ def reverse_string(s):
 
 def repeat(s,times=2):
     return s*times
+
+
+
+@app.route('/redirect_endpoint')
+
+def redirect_endpoint():
+    return redirect(url_for('other'))
+
 
 @app.template_filter('alternate_case')
 
