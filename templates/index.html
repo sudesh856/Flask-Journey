@@ -56,7 +56,7 @@ postButton.addEventListener('click', () => {
     fetch('{{ url_for("handle_post") }}', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json; charset=UTF-8'  // ✅ Fixed typo here
+            'Content-Type': 'application/json; charset=UTF-8'  
         },
         body: JSON.stringify(jsonData)
     })
