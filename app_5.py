@@ -43,7 +43,7 @@ def clear_session():
 def set_cookie():
     response = make_response(render_template('index_4.html', message = "Cookie Set"))
 
-    response.set_cookie('my_name', '10233')
+    response.set_cookie('cookie_name', '10233')
     
     return response 
 
@@ -54,6 +54,13 @@ def get_cookie():
     return render_template('index_4.html', message = f'Cookie Value: {cookie_value}')
 
 
+
+@app.route('/remove_cookie')
+
+def remove_cookie():
+    response = make_response(render_template('index_4.html', message = 'Cookie Remmoved!'))
+    response.set_cookie('cookie_name', expires=0)
+    return response
 
 if __name__ == "__main__":
 
