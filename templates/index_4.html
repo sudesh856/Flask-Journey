@@ -1,4 +1,4 @@
-{% extends "base_2.html" %}
+{% extends "base_4.html" %}
 
 {% block title %} Index Page {% endblock %}
 
@@ -6,27 +6,15 @@
 {% block content %}
 
 <h1>
-    Hey this is an image of a cat
+    hello world
 </h1>
 
-<img src="/img/catimg.jpeg" alt="this is an image of a cat">
-
-
-<p class="special">
- HELLOOO
-</p>
-
- 
 <p>
-<link rel="stylesheet" type="text/css" href="img/css/style.css">
-  
+    {{ message }}
 </p>
+<a href=" {{ url_for('set_data') }}">Set Session Data</a><br>
 
-<p>
-    <script src="/img/hello.js">
+<a href=" {{ url_for('get_data')}}"> click me</a><br>
 
-    </script>
-</p>
-
-<a href="#" class="btn btn-primary">Button Text</a>
+<a href=" {{ url_for('clear_session')}}">Clear Session</a><br>
 {% endblock %}
