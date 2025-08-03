@@ -1,0 +1,17 @@
+{% extends "base_4.html" %}
+
+{% block title %} Login Page {% endblock %}
+
+
+{% block content %}
+
+<h1>Login</h1>
+
+<form method="POST" action="{{url_for('login')}}">
+<input type="text" name="username" placeholder="username">
+<input type="password" name="password" placeholder="password">
+<input type="submit" value="login">
+
+</form>
+
+{% endblock %}
